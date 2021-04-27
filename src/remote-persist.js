@@ -208,7 +208,7 @@ module.exports = class extends React.Component {
                 <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Homepage</th>
               </tr>
             </thead>
-            <tbody class="lh-copy">
+            <tbody data-cy="user-table" class="lh-copy">
           {this.state.people.map((person, i) => {
             const {name, email, age, phoneNumber, homepage} = person
             return (

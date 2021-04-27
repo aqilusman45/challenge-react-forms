@@ -55,7 +55,7 @@ module.exports = class extends React.Component {
           onBlur={this.onBlur}
         />
         </label>
-        <div className='red mt2'>{this.state.error}</div>
+        <div data-cy="field-error" className='red mt2'>{this.state.error}</div>
       </div>
     );
   }
